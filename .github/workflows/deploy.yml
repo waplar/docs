@@ -110,7 +110,7 @@ jobs:
                     path: .
 
     deploy:
-        needs: build  # 确保 `deploy` job 等待 `build` job 完成
+        needs: sync-branch  # 确保 `deploy` job 等待 `build` job 完成
         runs-on: ubuntu-latest
         environment:
             name: github-pages
