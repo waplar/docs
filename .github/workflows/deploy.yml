@@ -77,6 +77,9 @@ jobs:
                 with:
                     name: site-build  # 下载构建文件
 
+            -   name: List downloaded files
+                run: ls -la ./site-build  # 确认下载的文件是否存在
+
             -   name: Set up Git configuration
                 run: |
                     git config --global user.name "GitHub Actions"
