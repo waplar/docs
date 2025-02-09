@@ -107,7 +107,7 @@ jobs:
                 uses: actions/upload-pages-artifact@v3
                 with:
                     name: github-pages
-                    path: docs/.vitepress/dist
+                    path: .
 
     deploy:
         needs: build  # 确保 `deploy` job 等待 `build` job 完成
