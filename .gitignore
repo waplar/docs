@@ -1,0 +1,6 @@
+/vendor
+/.idea
+*.idea
+qodana.yaml
+/node_modules
+/.vitepress
