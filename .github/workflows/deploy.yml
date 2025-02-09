@@ -76,6 +76,7 @@ jobs:
                 uses: actions/download-artifact@v4  # 使用 v4 版本
                 with:
                     name: site-build  # 下载构建文件
+                    path: ./site-build
 
             -   name: List downloaded files
                 run: ls -la ./site-build  # 确认下载的文件是否存在
