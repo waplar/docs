@@ -105,3 +105,5 @@ jobs:
             -   name: Deploy to GitHub Pages
                 id: deployment
                 uses: actions/deploy-pages@v4  # 部署到 GitHub Pages
+                with:
+                    artifact_name: site-build # 明确指定 artifact 名称
