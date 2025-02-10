@@ -1,14 +1,20 @@
 import { defineConfig } from 'vitepress'
 
+const baseUri = (url?: string) => {
+	const base = process.env.VITEPRESS_BASE || '/';
+
+	return base + url ?? '';
+}
+
 export default defineConfig({
-	base: process.env.VITEPRESS_BASE || '/',
+	base: baseUri(),
 	title: 'Waplar - alpha.x',
 	head: [
 		[
 			'link',
 			{
 				rel: 'icon',
-				href: './assets/favicon.ico'
+				href: baseUri('/assets/favicon.ico'),
 			}
 		]
 	],
@@ -19,7 +25,7 @@ export default defineConfig({
 		lastUpdated: true,
 		team: [
 			{
-				avatar: '../assets/kaneki-yuto.avatar.jpg',
+				avatar: baseUri('./assets/kaneki-yuto.avatar.jpg'),
 				name: 'KanekiYuto',
 				title: '创始人',
 				links: [{
