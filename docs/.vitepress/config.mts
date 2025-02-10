@@ -3,11 +3,11 @@ import { defineConfig } from 'vitepress'
 const baseUri = (url?: string) => {
 	const base = process.env.VITEPRESS_BASE || '/';
 
-	return base + url ?? '';
+	return base + url;
 }
 
 export default defineConfig({
-	base: baseUri(),
+	base: baseUri(''),
 	title: 'Waplar - alpha.x',
 	head: [
 		[
