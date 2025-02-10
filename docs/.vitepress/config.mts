@@ -8,7 +8,7 @@ export default defineConfig({
 			'link',
 			{
 				rel: 'icon',
-				href: '/assets/favicon.ico'
+				href: './assets/favicon.ico'
 			}
 		]
 	],
@@ -19,7 +19,7 @@ export default defineConfig({
 		lastUpdated: true,
 		team: [
 			{
-				avatar: '/assets/kaneki-yuto.avatar.jpg',
+				avatar: './assets/kaneki-yuto.avatar.jpg',
 				name: 'KanekiYuto',
 				title: '创始人',
 				links: [{
