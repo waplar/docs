@@ -4,7 +4,7 @@ layout: home
 
 hero:
     name: "Waplar Framework"
-    text: "让困难的事变简单 Alpha"
+    text: "让困难的事变简单"
     tagline: "得益于 Laravel 奠定的基础，现在 Waplar 站在巨人的肩膀之上提供更丰富的组件帮助您构建复杂应用。"
     image:
         src: /assets/laravel.png

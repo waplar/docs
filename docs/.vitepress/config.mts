@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
 	base: process.env.VITEPRESS_BASE || '/',
-	title: 'Waplar',
+	title: 'Waplar - alpha.x',
 	head: [
 		[
 			'link',
